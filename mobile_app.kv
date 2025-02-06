@@ -1,0 +1,20 @@
+# mobile_app.kv
+<MainWidget>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 20
+
+    TextInput:
+        id: reminder_input
+        hint_text: "Enter a reminder"
+        size_hint_y: 0.2
+
+    Button:
+        text: "Add Reminder"
+        size_hint_y: 0.2
+        on_press: root.add_reminder()
+
+    Label:
+        id: status_label
+        text: ""
+        size_hint_y: 0.2
