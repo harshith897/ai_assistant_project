@@ -1,6 +1,5 @@
 # server.py
 from flask import Flask, request, jsonify
-__name__="Harshith's AI"
 app = Flask(__name__)
 
 # In-memory storage for reminders (for prototype purposes)
